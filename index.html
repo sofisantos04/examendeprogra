@@ -1,0 +1,47 @@
+﻿<html>
+<head>
+<title>Validar si la contraseña y la repetición de la contraseña son iguales</title>
+<script>
+function comprobarClave(){
+    clave1 = document.f1.clave1.value
+    clave2 = document.f1.clave2.value
+     
+
+    if (clave1 == "sofia" && clave2 == "santos"){
+       alert("Los Datos Coinciden...\n Bienvenido");
+        var href =  "dos.html";
+        window.location=href;
+         }
+       
+    else{
+       alert("Las dos claves son distintas...\nIntentelo nuevamente.");
+        var href =  "index.html";
+        window.location=href;
+    };
+       
+}  
+</script>
+</head>
+
+<body background="C:\Users\ANONYMOUS\Desktop\we.jpg">
+
+<h1><center><font color="fusia">Validar si la contraseña y la repetición de la contraseña son iguales</h1></center></font>
+<br><font color="red">Escribe una supuesta contraseña dos veces, una en cada campo, y pulsa el botón. Javascript te dirá si las dos son iguales.</font>
+
+<br><br><br><table border="20" cellpadding="18" cellspacing="20" width="25%" bgcolor="#229954">
+
+<body>
+<form action="" name="f1">
+ <td>Contraseña: <input type="password" sofia="clave1" size="20"></b></td>
+</tr>
+<tr>
+<tr><td>Repite contraseña: <input type="password" santos="clave2" size="20"></td>
+</tr>
+
+<tr></tr><tr><td><input type="button" value="Comprobar si son iguales" onClick="comprobarClave()"></td></tr>
+
+
+
+</body>
+</table>
+</html>
